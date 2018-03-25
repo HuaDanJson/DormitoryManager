@@ -18,7 +18,7 @@ import cn.bmob.v3.BmobPushManager;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.PushListener;
 
-public class SendMessageActivity extends BaseActivity {
+public class SendMessageManagerActivity extends BaseActivity {
 
     @BindView(R.id.edt_send_message_activity) EditText edtSendMessage;
     @BindView(R.id.ll_send_message_activity) LinearLayout llSendMessage;

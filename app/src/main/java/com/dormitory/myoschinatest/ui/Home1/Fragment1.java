@@ -11,6 +11,7 @@ import android.widget.TextView;
 import com.dormitory.myoschinatest.R;
 import com.dormitory.myoschinatest.base.BaseFragment;
 import com.dormitory.myoschinatest.bean.DBTaskManagerUserInfoBean;
+import com.dormitory.myoschinatest.ui.Home3.SendMessageManagerActivity;
 import com.dormitory.myoschinatest.utils.ToastHelper;
 import com.dormitory.myoschinatest.utils.YiLog;
 
@@ -69,7 +70,7 @@ public class Fragment1 extends BaseFragment {
     public void onLaunchTaskClicked(View view) {
         YiLog.D("mCurrentUser = " + mCurrentUser);
         if (mCurrentUser != null && mCurrentUser.getTypeOfWorkManager() == 0) {
-            startActivity(new Intent(getActivity(), ManagerSendMeaasgeActivity.class));
+            startActivity(new Intent(getActivity(), SendMessageManagerActivity.class));
         } else {
             ToastHelper.showShortMessage("只有管理员才可以发布全体消息");
         }
