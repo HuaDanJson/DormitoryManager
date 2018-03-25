@@ -3,7 +3,7 @@ package com.aidebar.greendaotest.gen;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteStatement;
 
-import com.education.myoschinatest.bean.DBTaskManagerUserInfoBean;
+import com.dormitory.myoschinatest.bean.DBTaskManagerUserInfoBean;
 
 import org.greenrobot.greendao.AbstractDao;
 import org.greenrobot.greendao.Property;

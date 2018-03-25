@@ -5,6 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.education.myoschinatest.ui.Home3.CountTaskActivity">
+    tools:context="com.dormitory.myoschinatest.ui.Home3.CountTaskActivity">
 
 </android.support.constraint.ConstraintLayout>
