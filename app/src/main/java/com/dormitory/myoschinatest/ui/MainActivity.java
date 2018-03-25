@@ -186,7 +186,7 @@ public class MainActivity extends BaseActivity {
         PendingIntent pit = PendingIntent.getActivity(MainActivity.this, 0, intent, 0);
 //                设置图片文字提示方式等等
         Notification.Builder builder = new Notification.Builder(MainActivity.this);
-        builder.setContentTitle("您有 任务系统 新的消息")                        //标题
+        builder.setContentTitle("您有 宿舍系统 新的消息")                        //标题
                 .setContentText(notificationBean.getAlert())      //内容
                 .setSubText(notificationBean.getAlert())                    //内容下面的一小段文字
                 .setTicker(notificationBean.getAlert())             //收到信息后状态栏显示的文字信息
