@@ -167,7 +167,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/btn_orange_selector"
-                android:text="注册"
+                android:text="确认更新个人信息"
                 android:textColor="@color/white"/>
         </LinearLayout>
     </ScrollView>
