@@ -2,7 +2,7 @@ package com.dormitory.myoschinatest.utils;
 
 import android.content.Context;
 
-import com.aidebar.greendaotest.gen.DBStudentSendMessageBeanDao;
+import com.aidebar.greendaotest.gen.DBStudentMessageDao;
 import com.aidebar.greendaotest.gen.DaoManager;
 import com.dormitory.myoschinatest.bean.DBStudentMessage;
 
@@ -14,13 +14,13 @@ import java.util.List;
 
 public class DBStudentSendMessageBeanUtils {
 
-    private DBStudentSendMessageBeanDao dbUserInvestmentDao;
+    private DBStudentMessageDao dbUserInvestmentDao;
 
     private static DBStudentSendMessageBeanUtils dbUserInvestmentUtils = null;
 
     public DBStudentSendMessageBeanUtils(Context context) {
 
-        dbUserInvestmentDao = DaoManager.getInstance(context).getNewSession().getDBStudentSendMessageBeanDao();
+        dbUserInvestmentDao = DaoManager.getInstance(context).getNewSession().getDBStudentMessageDao();
     }
 
     public static DBStudentSendMessageBeanUtils getInstance() {

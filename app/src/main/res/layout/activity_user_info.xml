@@ -13,29 +13,28 @@
         app:contentInsetStart="0dp">
 
         <TextView
-            android:id="@+id/tvRegisterActivityTitle"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="18sp"
             android:gravity="center"
+            android:text="个 人 信 息 页"
             android:textColor="@color/white"
-            android:textStyle="bold"
-            android:text="个人信息页" />
+            android:textSize="18sp"
+            android:textStyle="bold"/>
 
     </android.support.v7.widget.Toolbar>
 
     <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:paddingBottom="@dimen/activity_vertical_margin"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:paddingTop="@dimen/activity_vertical_margin">
 
         <LinearLayout
-            android:focusableInTouchMode="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
             android:orientation="vertical">
 
             <android.support.design.widget.TextInputLayout
@@ -48,7 +47,7 @@
                     android:layout_height="wrap_content"
                     android:hint="姓名"
                     android:maxLines="1"
-                    android:singleLine="true" />
+                    android:singleLine="true"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -62,7 +61,7 @@
                     android:layout_height="wrap_content"
                     android:hint="年龄"
                     android:maxLines="1"
-                    android:singleLine="true" />
+                    android:singleLine="true"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -76,7 +75,7 @@
                     android:layout_height="wrap_content"
                     android:hint="电话"
                     android:maxLines="1"
-                    android:singleLine="true" />
+                    android:singleLine="true"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -91,18 +90,85 @@
                     android:layout_height="wrap_content"
                     android:hint="邮箱"
                     android:maxLines="1"
-                    android:singleLine="true" />
+                    android:singleLine="true"/>
             </android.support.design.widget.TextInputLayout>
 
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtUserInfoActivityXueHao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="学号"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtUserInfoActivityZhaunYe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="专业"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtUserInfoActivityXueYuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="学院"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtUserInfoActivityShuSheNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="宿舍号"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtUserInfoActivityChuangWeiNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="床位"
+                    android:maxLines="1"
+                    android:singleLine="true"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <View style="@style/AppTheme.SingleHorizontalLineStyle"/>
+
             <Button
-                android:layout_alignParentRight="true"
-                android:id="@+id/btnUserInfoActivitySubmit"
-                android:layout_marginTop="16dp"
-                android:text="确定修改"
+                android:id="@+id/btnRegisterActivitySubmit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:background="@drawable/btn_orange_selector" />
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_orange_selector"
+                android:text="注册"
+                android:textColor="@color/white"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

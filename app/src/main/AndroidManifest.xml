@@ -86,7 +86,7 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan|stateHidden"/>
         <activity
-            android:name=".ui.Home3.CountTaskActivity"
+            android:name=".ui.Home3.StudentMessageActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan|stateHidden"/>
 

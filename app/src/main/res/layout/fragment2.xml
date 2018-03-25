@@ -22,10 +22,26 @@
 
     </android.support.v7.widget.Toolbar>
 
+    <TextView
+        android:id="@+id/tv_check_student_message_fragment2"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_corner_14dp_blue_primary_solid"
+        android:gravity="center"
+        android:text="查 看 学 生 发 布 的 消 息"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="visible"/>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rlv_notification_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
         android:visibility="visible">
 
     </android.support.v7.widget.RecyclerView>

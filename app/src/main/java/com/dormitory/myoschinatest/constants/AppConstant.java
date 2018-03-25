@@ -47,6 +47,7 @@ public final class AppConstant {
     public static final class IntentKey {
 
         public static final String INTENT_TO_SEND_MESSAGE_ACTIVITY_WITH_TITLE = "INTENT_TO_SEND_MESSAGE_ACTIVITY_WITH_TITLE";
+        public static final String INTENT_TO_STUDENT_MESSAGE_ACTIVITY_WITH_TYPE= "INTENT_TO_STUDENT_MESSAGE_ACTIVITY_WITH_TYPE";
     }
 
     public static final class ReceiveMessageType {
