@@ -11,10 +11,10 @@
         android:background="@color/blue">
 
         <TextView
+            android:id="@+id/tv_title_send_message_activity"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="管 理 员 发 布 消 息"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"/>
@@ -30,7 +30,7 @@
         android:background="@drawable/feedback_activity_edit_feedback_background">
 
         <EditText
-            android:id="@+id/edt_send_message_activity"
+            android:id="@+id/edt_message_send_message_activity"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -39,14 +39,14 @@
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:gravity="center"
-            android:hint="请输入公告内容"
-            android:textSize="14sp"
-            />
+            android:hint="请输入消息内容"
+            android:textSize="14sp"/>
+
     </LinearLayout>
 
 
     <LinearLayout
-        android:id="@+id/ll_send_message_activity"
+        android:id="@+id/ll_sure_send_message_activity"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginLeft="24dp"
@@ -61,7 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:text="发 布 公 告"
+            android:text="确 认 发 布"
             android:textColor="@color/white"
             android:textSize="14sp"
             android:textStyle="bold"

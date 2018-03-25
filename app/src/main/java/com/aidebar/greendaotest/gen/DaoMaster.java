@@ -28,6 +28,7 @@ public class DaoMaster extends AbstractDaoMaster {
         DBTicketBeanDao.createTable(db, ifNotExists);
         DBUserInfoBeanDao.createTable(db, ifNotExists);
         DBNotificationBeanDao.createTable(db, ifNotExists);
+        DBStudentSendMessageBeanDao.createTable(db, ifNotExists);
     }
 
     /** Drops underlying database table using DAOs. */
@@ -39,6 +40,7 @@ public class DaoMaster extends AbstractDaoMaster {
         DBTicketBeanDao.dropTable(db, ifExists);
         DBUserInfoBeanDao.dropTable(db, ifExists);
         DBNotificationBeanDao.dropTable(db, ifExists);
+        DBStudentSendMessageBeanDao.dropTable(db, ifExists);
     }
 
     /**
@@ -64,6 +66,7 @@ public class DaoMaster extends AbstractDaoMaster {
         registerDaoClass(DBTicketBeanDao.class);
         registerDaoClass(DBUserInfoBeanDao.class);
         registerDaoClass(DBNotificationBeanDao.class);
+        registerDaoClass(DBStudentSendMessageBeanDao.class);
     }
 
     public DaoSession newSession() {

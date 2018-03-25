@@ -1,18 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.dormitory.myoschinatest.ui.Home1.StudentSendMeaageActivity">
+    android:background="@drawable/icon_app_bg">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rlv_check_task_activity"
+    <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="56dp">
+        android:layout_height="56dp"
+        android:background="@color/blue"
+        app:contentInsetStart="0dp">
 
-    </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="学生发布消息"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
 
-</LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_wan_gui_student_send_message_activity"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_corner_14dp_blue_primary_solid"
+            android:gravity="center"
+            android:text="晚归报备"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_ru_zhu_deng_ji_student_send_message_activity"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_corner_14dp_blue_primary_solid"
+            android:gravity="center"
+            android:text="入住离校登记"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_jia_qi_liu_su_deng_ji_student_send_message_activity"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_corner_14dp_blue_primary_solid"
+            android:gravity="center"
+            android:text="假期留宿登记"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_shi_wu_deng_ji_zhao_ling_student_send_message_activity"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_corner_14dp_blue_primary_solid"
+            android:gravity="center"
+            android:text="失物登记及招领"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_fang_ke_deng_ji_student_send_message_activity"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_corner_14dp_blue_primary_solid"
+            android:gravity="center"
+            android:text="来访人员留宿和离宿登记"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_bao_xiu_student_send_message_activity"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_corner_14dp_blue_primary_solid"
+            android:gravity="center"
+            android:text="电器电路报修"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_su_she_bao_xiu_student_send_message_activity"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_corner_14dp_blue_primary_solid"
+            android:gravity="center"
+            android:text="宿舍桌椅床具报修"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

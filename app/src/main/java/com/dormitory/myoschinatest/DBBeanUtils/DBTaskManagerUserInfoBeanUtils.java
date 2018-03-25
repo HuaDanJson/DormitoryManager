@@ -154,7 +154,7 @@ public class DBTaskManagerUserInfoBeanUtils {
      *
      * @return
      */
-    public List<DBTaskManagerUserInfoBean> queryData() {
+    public List<DBTaskManagerUserInfoBean> queryAllData() {
         return dbUserInfoBeanDao.loadAll();
     }
 

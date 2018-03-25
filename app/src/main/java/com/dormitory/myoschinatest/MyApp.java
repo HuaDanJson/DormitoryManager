@@ -5,6 +5,7 @@ import android.app.Application;
 import android.content.SharedPreferences;
 import android.util.Log;
 
+import com.blankj.utilcode.util.Utils;
 import com.dormitory.myoschinatest.DBBeanUtils.ConstKey;
 import com.dormitory.myoschinatest.DBBeanUtils.DBBuyTicketBeanUtils;
 import com.dormitory.myoschinatest.DBBeanUtils.DBShouChangTicketBeanUtils;
@@ -12,6 +13,7 @@ import com.dormitory.myoschinatest.DBBeanUtils.DBTaskManagerUserInfoBeanUtils;
 import com.dormitory.myoschinatest.DBBeanUtils.DBTicketBeanUtils;
 import com.dormitory.myoschinatest.DBBeanUtils.DBUserInfoBeanUtils;
 import com.dormitory.myoschinatest.utils.DBNotificationBeanUtils;
+import com.dormitory.myoschinatest.utils.DBStudentSendMessageBeanUtils;
 import com.dormitory.myoschinatest.utils.DBTaskBeanUtils;
 import com.dormitory.myoschinatest.utils.ToastHelper;
 import com.litesuits.orm.LiteOrm;
@@ -42,6 +44,7 @@ public class MyApp extends Application {
         DBTicketBeanUtils.Init(getApplicationContext());
         DBBuyTicketBeanUtils.Init(getApplicationContext());
         DBShouChangTicketBeanUtils.Init(getApplicationContext());
+        DBStudentSendMessageBeanUtils.Init(getApplicationContext());
 
         //用SharedPreferences 存储用户名和密码
         SharedPreferences pref = getApplicationContext().getSharedPreferences(ConstKey.KEY_WIFI_REMIND_Shared_Preference, MODE_PRIVATE);
@@ -69,6 +72,7 @@ public class MyApp extends Application {
         });
         // 启动推送服务
         BmobPush.startWork(this);
+        Utils.init(getApplicationContext());
     }
 
     private void initLiteOrm() {
