@@ -50,7 +50,7 @@ public class MainActivity extends BaseActivity {
     public static final String HOME_CURRENT_TAB_POSITION = "HOME_CURRENT_TAB_POSITION";
 
     private CommonTabLayout bottomTabLayout;
-    private String[] mTitles = {"任务", "消息", "我的"};
+    private String[] mTitles = {"发布", "消息", "我的"};
     private int[] mIconUnselectIds = {R.drawable.icon_job, R.drawable.icon_news, R.mipmap.ic_user};
     private int[] mIconSelectIds = {R.drawable.icon_job_selected, R.drawable.icon_news_selected, R.mipmap.ic_user_selected};
     private ArrayList<CustomTabEntity> mTabEntities = new ArrayList<>();
@@ -62,7 +62,7 @@ public class MainActivity extends BaseActivity {
         bottomTabLayout = (CommonTabLayout) findViewById(R.id.main_tab_layout);
         initTab();
         initFragment(savedInstanceState);
-        Bmob.initialize(this, "5f38f08929314ed5b3f0f4992b847582");
+        Bmob.initialize(this, "07348efa40f2184aaf6c11bb75aeab97");
         BmobInstallationManager.getInstallationId();
         BmobInstallationManager.getInstance().getCurrentInstallation();
         BmobInstallationManager.getInstance().initialize(new InstallationListener<BmobInstallation>() {

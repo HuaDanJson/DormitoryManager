@@ -6,16 +6,7 @@
 
     <string-array name="provarray">
         <item>管理员</item>
-        <item>设计</item>
-        <item>数冲</item>
-        <item>压铆</item>
-        <item>折弯</item>
-        <item>焊接</item>
-        <item>打磨</item>
-        <item>喷塑</item>
-        <item>装配</item>
-        <item>出库</item>
-
+        <item>学生</item>
     </string-array>
 
 </resources>

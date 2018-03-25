@@ -19,7 +19,7 @@ public class WelcomeActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-        Bmob.initialize(this, "5f38f08929314ed5b3f0f4992b847582");
+        Bmob.initialize(this, "07348efa40f2184aaf6c11bb75aeab97");
         BmobInstallationManager.getInstallationId();
         BmobInstallationManager.getInstance().getCurrentInstallation();
         BmobInstallationManager.getInstance().initialize(new InstallationListener<BmobInstallation>() {
