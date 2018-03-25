@@ -63,11 +63,11 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan|stateHidden"/>
         <activity
-            android:name=".ui.Home1.LaunchTaskActivity"
+            android:name=".ui.Home1.ManagerSendMeaasgeActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan|stateHidden"/>
         <activity
-            android:name=".ui.Home1.CheckTaskActivity"
+            android:name=".ui.Home1.StudentSendMeaageActivity"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.Home1.FixTaskActivity"

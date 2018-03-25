@@ -22,10 +22,10 @@ import cn.bmob.v3.BmobUser;
 
 public class Fragment1 extends BaseFragment {
 
-    @BindView(R.id.tv_launch_task_fragment1) TextView tvLaunchTaskFragment1;
-    @BindView(R.id.tv_check_task_fragment1) TextView tvCheckTaskFragment1;
-    @BindView(R.id.tv_fix_task_fragment1) TextView tvFixTaskFragment1;
-    @BindView(R.id.tv_end_task_fragment1) TextView tvEndTaskFragment1;
+    @BindView(R.id.tv_manager_send_message_fragment1) TextView tvLaunchTaskFragment1;
+    @BindView(R.id.tv_student_send_message_fragment1) TextView tvCheckTaskFragment1;
+
+
     Unbinder unbinder;
     private DBTaskManagerUserInfoBean mCurrentUser;
 
@@ -65,32 +65,22 @@ public class Fragment1 extends BaseFragment {
         unbinder.unbind();
     }
 
-    @OnClick(R.id.tv_launch_task_fragment1)
+    @OnClick(R.id.tv_manager_send_message_fragment1)
     public void onLaunchTaskClicked(View view) {
         YiLog.D("mCurrentUser = " + mCurrentUser);
         if (mCurrentUser != null && mCurrentUser.getTypeOfWorkManager() == 0) {
-            startActivity(new Intent(getActivity(), LaunchTaskActivity.class));
+            startActivity(new Intent(getActivity(), ManagerSendMeaasgeActivity.class));
         } else {
-            ToastHelper.showShortMessage("只有管理员才可以添加新任务");
+            ToastHelper.showShortMessage("只有管理员才可以发布全体消息");
         }
     }
 
-    @OnClick(R.id.tv_check_task_fragment1)
+    @OnClick(R.id.tv_student_send_message_fragment1)
     public void onCheckTaskClicked(View view) {
-        startActivity(new Intent(getActivity(), CheckTaskActivity.class));
-    }
-
-    @OnClick(R.id.tv_fix_task_fragment1)
-    public void onFixTaskClicked(View view) {
-        startActivity(new Intent(getActivity(), FixTaskActivity.class));
-    }
-
-    @OnClick(R.id.tv_end_task_fragment1)
-    public void onEndTaskClicked(View view) {
-        if (mCurrentUser != null && mCurrentUser.getTypeOfWorkManager() == 0) {
-            startActivity(new Intent(getActivity(), DeleteTaskActivity.class));
+        if (mCurrentUser != null && mCurrentUser.getTypeOfWorkManager() == 1) {
+            startActivity(new Intent(getActivity(), StudentSendMeaageActivity.class));
         } else {
-            ToastHelper.showShortMessage("只有管理员才可以删除任务");
+            ToastHelper.showShortMessage("只有学生才可以发布学生消息");
         }
     }
 

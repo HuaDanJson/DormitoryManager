@@ -3,8 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:background="@drawable/icon_app_bg"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_app_bg">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="任务管理"
+            android:text="发布消息"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"/>
@@ -31,7 +31,7 @@
 
 
         <TextView
-            android:id="@+id/tv_launch_task_fragment1"
+            android:id="@+id/tv_manager_send_message_fragment1"
             android:layout_width="match_parent"
             android:layout_height="46dp"
             android:layout_marginLeft="40dp"
@@ -39,49 +39,21 @@
             android:layout_marginTop="30dp"
             android:background="@drawable/shape_corner_14dp_blue_primary_solid"
             android:gravity="center"
-            android:text="发 起 任 务"
+            android:text="管理员发布消息"
             android:textColor="@color/white"
             android:textSize="17sp"
             android:textStyle="bold"/>
 
         <TextView
-            android:id="@+id/tv_check_task_fragment1"
+            android:id="@+id/tv_student_send_message_fragment1"
             android:layout_width="match_parent"
             android:layout_height="46dp"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/shape_corner_14dp_blue_primary_solid"
             android:gravity="center"
-            android:text="查 看 任 务"
-            android:textColor="@color/white"
-            android:textSize="17sp"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:id="@+id/tv_fix_task_fragment1"
-            android:layout_width="match_parent"
-            android:layout_height="46dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/shape_corner_14dp_blue_primary_solid"
-            android:gravity="center"
-            android:text="修 改 进 度"
-            android:textColor="@color/white"
-            android:textSize="17sp"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:id="@+id/tv_end_task_fragment1"
-            android:layout_width="match_parent"
-            android:layout_height="46dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/shape_corner_14dp_blue_primary_solid"
-            android:gravity="center"
-            android:text="删 除 任 务"
+            android:text="学生发布消息"
             android:textColor="@color/white"
             android:textSize="17sp"
             android:textStyle="bold"/>

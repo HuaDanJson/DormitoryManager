@@ -43,6 +43,12 @@ public class RegisterActivity extends AppCompatActivity {
     Button btnRegisterActivitySubmit;
     @BindView(R.id.spinner_kind_work) Spinner spinnerKindWork;
 
+    @BindView(R.id.edtRegisterActivityXueHao) EditText edtRegisterActivityXueHao;
+    @BindView(R.id.edtRegisterActivityZhaunYe) EditText edtRegisterActivityZhaunYe;
+    @BindView(R.id.edtRegisterActivityXueYuan) EditText edtRegisterActivityXueYuan;
+    @BindView(R.id.edtRegisterActivityShuSheNumber) EditText edtRegisterActivityShuSheNumber;
+    @BindView(R.id.edtRegisterActivityChuangWeiNumber) EditText edtRegisterActivityChuangWeiNumber;
+
     private int typeOfWorkManager = 0;
     private String typeOfWork = "管理员";
 
@@ -82,6 +88,12 @@ public class RegisterActivity extends AppCompatActivity {
         String old = edtRegisterActivityOld.getText().toString();
         String tellPhone = edtRegisterActivityTel.getText().toString();
         String mail = edtRegisterActivityMail.getText().toString();
+        String xueHao = edtRegisterActivityXueHao.getText().toString();
+        String zhaunYe = edtRegisterActivityZhaunYe.getText().toString();
+        String xueYuan = edtRegisterActivityXueYuan.getText().toString();
+        String suSheHao = edtRegisterActivityShuSheNumber.getText().toString();
+        String bedNumber = edtRegisterActivityChuangWeiNumber.getText().toString();
+
         if (TextUtils.isEmpty(userName) || TextUtils.isEmpty(passWord1) || TextUtils.isEmpty(passWord2) || TextUtils.isEmpty(name) || TextUtils.isEmpty(old) || TextUtils.isEmpty(tellPhone) || TextUtils.isEmpty(mail)) {
             Toast.makeText(RegisterActivity.this, "请输入完整信息后再注册", Toast.LENGTH_SHORT).show();
         } else {
@@ -96,6 +108,11 @@ public class RegisterActivity extends AppCompatActivity {
                 dbUserInfoBean.setMail(mail);
                 dbUserInfoBean.setTypeOfWork(typeOfWork);
                 dbUserInfoBean.setTypeOfWorkManager(typeOfWorkManager);
+                dbUserInfoBean.setXueHao(xueHao);
+                dbUserInfoBean.setZhuanYe(zhaunYe);
+                dbUserInfoBean.setXueYuan(xueYuan);
+                dbUserInfoBean.setSusheHao(suSheHao);
+                dbUserInfoBean.setBedNumber(bedNumber);
                 dbUserInfoBean.signUp(new SaveListener<DBTaskManagerUserInfoBean>() {
                     @Override
                     public void done(DBTaskManagerUserInfoBean dbTaskManagerUserInfoBean, BmobException e) {

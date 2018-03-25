@@ -15,7 +15,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class CheckTaskActivity extends BaseActivity {
+public class StudentSendMeaageActivity extends BaseActivity {
 
     @BindView(R.id.rlv_check_task_activity) RecyclerView mRecyclerView;
 

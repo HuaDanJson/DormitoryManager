@@ -20,91 +20,107 @@ public class DBTaskManagerUserInfoBean extends BmobUser {
     public String old;
     public String tellPhone;
     public String mail;
+    public String xueHao;
+    public String zhuanYe;
+    public String xueYuan;
+    public String susheHao;
+    public String bedNumber;
     public String typeOfWork;
     public int typeOfWorkManager;
-
-    @Generated(hash = 1690811285)
+    @Generated(hash = 1211586222)
     public DBTaskManagerUserInfoBean(long creatTimeAsId, String name, String old,
-                                     String tellPhone, String mail, String typeOfWork, int typeOfWorkManager) {
+            String tellPhone, String mail, String xueHao, String zhuanYe,
+            String xueYuan, String susheHao, String bedNumber, String typeOfWork,
+            int typeOfWorkManager) {
         this.creatTimeAsId = creatTimeAsId;
         this.name = name;
         this.old = old;
         this.tellPhone = tellPhone;
         this.mail = mail;
+        this.xueHao = xueHao;
+        this.zhuanYe = zhuanYe;
+        this.xueYuan = xueYuan;
+        this.susheHao = susheHao;
+        this.bedNumber = bedNumber;
         this.typeOfWork = typeOfWork;
         this.typeOfWorkManager = typeOfWorkManager;
     }
-
     @Generated(hash = 173426095)
     public DBTaskManagerUserInfoBean() {
     }
-
     public long getCreatTimeAsId() {
         return this.creatTimeAsId;
     }
-
     public void setCreatTimeAsId(long creatTimeAsId) {
         this.creatTimeAsId = creatTimeAsId;
     }
-
     public String getName() {
         return this.name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public String getOld() {
         return this.old;
     }
-
     public void setOld(String old) {
         this.old = old;
     }
-
     public String getTellPhone() {
         return this.tellPhone;
     }
-
     public void setTellPhone(String tellPhone) {
         this.tellPhone = tellPhone;
     }
-
     public String getMail() {
         return this.mail;
     }
-
     public void setMail(String mail) {
         this.mail = mail;
     }
-
+    public String getXueHao() {
+        return this.xueHao;
+    }
+    public void setXueHao(String xueHao) {
+        this.xueHao = xueHao;
+    }
+    public String getZhuanYe() {
+        return this.zhuanYe;
+    }
+    public void setZhuanYe(String zhuanYe) {
+        this.zhuanYe = zhuanYe;
+    }
+    public String getXueYuan() {
+        return this.xueYuan;
+    }
+    public void setXueYuan(String xueYuan) {
+        this.xueYuan = xueYuan;
+    }
+    public String getSusheHao() {
+        return this.susheHao;
+    }
+    public void setSusheHao(String susheHao) {
+        this.susheHao = susheHao;
+    }
+    public String getBedNumber() {
+        return this.bedNumber;
+    }
+    public void setBedNumber(String bedNumber) {
+        this.bedNumber = bedNumber;
+    }
     public String getTypeOfWork() {
         return this.typeOfWork;
     }
-
     public void setTypeOfWork(String typeOfWork) {
         this.typeOfWork = typeOfWork;
     }
-
     public int getTypeOfWorkManager() {
         return this.typeOfWorkManager;
     }
-
     public void setTypeOfWorkManager(int typeOfWorkManager) {
         this.typeOfWorkManager = typeOfWorkManager;
     }
 
-    @Override
-    public String toString() {
-        return "DBTaskManagerUserInfoBean{" +
-                "creatTimeAsId=" + creatTimeAsId +
-                ", name='" + name + '\'' +
-                ", old='" + old + '\'' +
-                ", tellPhone='" + tellPhone + '\'' +
-                ", mail='" + mail + '\'' +
-                ", typeOfWork='" + typeOfWork + '\'' +
-                ", typeOfWorkManager=" + typeOfWorkManager +
-                '}';
-    }
+
+
 }
