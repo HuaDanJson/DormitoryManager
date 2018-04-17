@@ -175,4 +175,14 @@ public class DBStudentSendMessageBeanUtils {
     public List<DBStudentMessage> queryAllData() {
         return dbUserInvestmentDao.loadAll();
     }
+
+    /**
+     * 完成对数据库查询所有数据操作
+     *
+     * @return
+     */
+    public List<DBStudentMessage> queryDataDependUserName(String userName) {
+        return dbUserInvestmentDao.queryBuilder().where(DBStudentMessageDao.Properties.SenderName.eq(userName)).build().list();
+
+    }
 }

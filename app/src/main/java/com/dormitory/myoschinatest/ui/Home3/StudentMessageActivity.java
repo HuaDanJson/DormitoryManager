@@ -10,6 +10,7 @@ import com.blankj.utilcode.util.LogUtils;
 import com.dormitory.myoschinatest.R;
 import com.dormitory.myoschinatest.base.BaseActivity;
 import com.dormitory.myoschinatest.bean.DBStudentMessage;
+import com.dormitory.myoschinatest.bean.DBTaskManagerUserInfoBean;
 import com.dormitory.myoschinatest.constants.AppConstant;
 import com.dormitory.myoschinatest.utils.DBStudentSendMessageBeanUtils;
 
@@ -19,6 +20,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.bmob.v3.BmobQuery;
+import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.FindListener;
 
@@ -30,6 +32,7 @@ public class StudentMessageActivity extends BaseActivity {
     private int type;
     private List<DBStudentMessage> studentMessageList = new ArrayList<>();
     private StudentMessageAdapter studentMessageAdapter;
+    private DBTaskManagerUserInfoBean mCurrentUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +40,7 @@ public class StudentMessageActivity extends BaseActivity {
         setContentView(R.layout.activity_count_task);
         ButterKnife.bind(this);
         type = getIntent().getIntExtra(AppConstant.IntentKey.INTENT_TO_STUDENT_MESSAGE_ACTIVITY_WITH_TYPE, 0);
-        LogUtils.d("StudentMessageActivity 1111  type  = "+type);
+        LogUtils.d("StudentMessageActivity 1111  type  = " + type);
 
         if (type == 2) {
             LogUtils.d("StudentMessageActivity 1111");
@@ -53,8 +56,11 @@ public class StudentMessageActivity extends BaseActivity {
     }
 
     public void getStudentMessageFromDB() {
-        studentMessageList = DBStudentSendMessageBeanUtils.getInstance().queryAllData();
-        initRecyclerView();
+        mCurrentUser = BmobUser.getCurrentUser(DBTaskManagerUserInfoBean.class);
+        if (mCurrentUser != null) {
+            studentMessageList = DBStudentSendMessageBeanUtils.getInstance().queryDataDependUserName(mCurrentUser.getName());
+            initRecyclerView();
+        }
     }
 
     public void getStudentMessageFromService() {

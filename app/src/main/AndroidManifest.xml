@@ -102,6 +102,10 @@
             android:name=".ui.other.login.StudentrRegisterActivity"
             android:screenOrientation="portrait"/>
 
+        <activity
+            android:name=".ui.Home3.ManagerUserInfoActivity"
+            android:screenOrientation="portrait"/>
+
 
         <!-- TODO 集成：1.2、添加推送所需要的服务和广播 -->
         <service

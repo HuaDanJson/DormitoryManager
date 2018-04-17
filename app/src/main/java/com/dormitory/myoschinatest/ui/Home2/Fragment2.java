@@ -51,6 +51,12 @@ public class Fragment2 extends BaseFragment implements NotificationAdapter.Notif
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mCurrentUser = BmobUser.getCurrentUser(DBTaskManagerUserInfoBean.class);
+        mCurrentUser = BmobUser.getCurrentUser(DBTaskManagerUserInfoBean.class);
+        if (mCurrentUser != null && mCurrentUser.getTypeOfWorkManager() == 0) {
+            mCheckStudentMessage.setVisibility(View.VISIBLE);
+        } else {
+            mCheckStudentMessage.setVisibility(View.GONE);
+        }
         initRecyclerView();
     }
 

@@ -26,7 +26,6 @@ public class Fragment1 extends BaseFragment {
     @BindView(R.id.tv_manager_send_message_fragment1) TextView tvLaunchTaskFragment1;
     @BindView(R.id.tv_student_send_message_fragment1) TextView tvCheckTaskFragment1;
 
-
     Unbinder unbinder;
     private DBTaskManagerUserInfoBean mCurrentUser;
 
@@ -53,6 +52,13 @@ public class Fragment1 extends BaseFragment {
         super.onViewCreated(view, savedInstanceState);
         initView();
         mCurrentUser = BmobUser.getCurrentUser(DBTaskManagerUserInfoBean.class);
+        if (mCurrentUser != null && mCurrentUser.getTypeOfWorkManager() == 0) {
+            tvLaunchTaskFragment1.setVisibility(View.VISIBLE);
+            tvCheckTaskFragment1.setVisibility(View.GONE);
+        } else {
+            tvLaunchTaskFragment1.setVisibility(View.GONE);
+            tvCheckTaskFragment1.setVisibility(View.VISIBLE);
+        }
     }
 
     @Override

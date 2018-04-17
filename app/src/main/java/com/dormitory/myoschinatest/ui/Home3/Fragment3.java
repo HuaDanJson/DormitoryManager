@@ -13,7 +13,6 @@ import com.dormitory.myoschinatest.base.BaseFragment;
 import com.dormitory.myoschinatest.bean.DBTaskManagerUserInfoBean;
 import com.dormitory.myoschinatest.constants.AppConstant;
 import com.dormitory.myoschinatest.ui.other.login.LoginActivity;
-import com.dormitory.myoschinatest.utils.ToastHelper;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -87,7 +86,7 @@ public class Fragment3 extends BaseFragment {
         if (mCurrentUser != null && mCurrentUser.getTypeOfWorkManager() == 1) {
             startActivity(new Intent(getActivity(), UserInfoActivity.class));
         } else {
-            ToastHelper.showShortMessage("只有学生才可以查看自己发送的消息");
+            startActivity(new Intent(getActivity(), ManagerUserInfoActivity.class));
         }
     }
 }
