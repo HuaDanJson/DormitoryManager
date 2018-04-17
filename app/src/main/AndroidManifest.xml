@@ -94,6 +94,14 @@
             android:name=".ui.Home1.SendMessageActivity"
             android:screenOrientation="portrait"/>
 
+        <activity
+            android:name=".ui.other.login.ManagerRegisterActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.other.login.StudentrRegisterActivity"
+            android:screenOrientation="portrait"/>
+
 
         <!-- TODO 集成：1.2、添加推送所需要的服务和广播 -->
         <service
